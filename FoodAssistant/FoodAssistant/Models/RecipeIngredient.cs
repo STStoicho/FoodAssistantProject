@@ -6,6 +6,10 @@ namespace FoodAssistant.Models
     {
         public int Id { get; set; }
 
+        [Required]
+        [StringLength(150)]
+        public string IngredientName { get; set; } = string.Empty;
+
         // Връзка към рецептата
         public int RecipeId { get; set; }
 

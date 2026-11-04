@@ -14,6 +14,8 @@ builder.Services.AddHttpClient<FoodDataCentralService>(client =>
 
 builder.Services.AddHttpClient<AiRecipeService>();
 
+builder.Services.AddScoped<NutritionService>();
+
 // Връзка с SQLite базата данни
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 

@@ -31,6 +31,70 @@
 
     <hr />
 
+    <h3>Хранителни стойности</h3>
+
+    <p class="text-muted">
+        Данните са изчислени чрез USDA FoodData Central.
+    </p>
+
+    <div class="row g-3 mb-4">
+
+        <div class="col-md-6">
+            <div class="card p-3 h-100">
+                <h5>Цяла рецепта</h5>
+
+                <p>
+                    Калории:
+                    <strong>@Model.Nutrition.TotalCalories kcal</strong>
+                </p>
+
+                <p>
+                    Протеини:
+                    <strong>@Model.Nutrition.TotalProtein g</strong>
+                </p>
+
+                <p>
+                    Въглехидрати:
+                    <strong>@Model.Nutrition.TotalCarbs g</strong>
+                </p>
+
+                <p class="mb-0">
+                    Мазнини:
+                    <strong>@Model.Nutrition.TotalFat g</strong>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card p-3 h-100">
+                <h5>За една порция</h5>
+
+                <p>
+                    Калории:
+                    <strong>@Model.Nutrition.CaloriesPerServing kcal</strong>
+                </p>
+
+                <p>
+                    Протеини:
+                    <strong>@Model.Nutrition.ProteinPerServing g</strong>
+                </p>
+
+                <p>
+                    Въглехидрати:
+                    <strong>@Model.Nutrition.CarbsPerServing g</strong>
+                </p>
+
+                <p class="mb-0">
+                    Мазнини:
+                    <strong>@Model.Nutrition.FatPerServing g</strong>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <hr />
+
     <h3>Начин на приготвяне</h3>
 
     <ol>
@@ -44,17 +108,292 @@
 
     <h3>Здравословни алтернативи</h3>
 
-    <ul>
-        @foreach (var alternative in Model.HealthyAlternatives)
+    @if (Model.HealthyAlternatives.Count > 0)
+    {
+        @for (int i = 0; i < Model.HealthyAlternatives.Count; i++)
         {
-            <li>@alternative</li>
-        }
-    </ul>
+            var alternative = Model.HealthyAlternatives[i];
 
-    <a asp-controller="Recipes"
-       asp-action="Index"
-       class="btn btn-success mt-3">
-        Генерирай друга рецепта
-    </a>
+            <div class="card p-3 mb-3">
+
+                <h5>
+                    @alternative.OriginalIngredientName
+                    <span class="text-success">→</span>
+                    @alternative.AlternativeName
+                </h5>
+
+                <p>@alternative.Reason</p>
+
+                <p class="text-muted mb-2">
+                    Количество: @alternative.QuantityGrams g
+                </p>
+
+                <form asp-controller="Recipes"
+                      asp-action="ReplaceIngredient"
+                      method="post">
+
+                    @Html.AntiForgeryToken()
+
+                    <input type="hidden"
+                           name="servings"
+                           value="@ViewBag.Servings" />
+
+                    <input type="hidden"
+                           name="sourceIngredients"
+                           value="@ViewBag.Ingredients" />
+
+                    <input type="hidden"
+                           name="targetCalories"
+                           value="@ViewBag.TargetCalories" />
+
+                    <input type="hidden"
+                           name="alternative.OriginalIngredientName"
+                           value="@alternative.OriginalIngredientName" />
+
+                    <input type="hidden"
+                           name="alternative.AlternativeName"
+                           value="@alternative.AlternativeName" />
+
+                    <input type="hidden"
+                           name="alternative.UsdaSearchTerm"
+                           value="@alternative.UsdaSearchTerm" />
+
+                    <input type="hidden"
+                           name="alternative.QuantityGrams"
+                           value="@alternative.QuantityGrams" />
+
+                    <input type="hidden"
+                           name="alternative.Reason"
+                           value="@alternative.Reason" />
+
+                    <input type="hidden"
+                           name="recipe.Name"
+                           value="@Model.Name" />
+
+                    <input type="hidden"
+                           name="recipe.Description"
+                           value="@Model.Description" />
+
+                    <input type="hidden"
+                           name="recipe.PreparationTimeMinutes"
+                           value="@Model.PreparationTimeMinutes" />
+
+                    @for (int j = 0; j < Model.Ingredients.Count; j++)
+                    {
+                        <input type="hidden"
+                               name="recipe.Ingredients[@j].Name"
+                               value="@Model.Ingredients[j].Name" />
+
+                        <input type="hidden"
+                               name="recipe.Ingredients[@j].UsdaSearchTerm"
+                               value="@Model.Ingredients[j].UsdaSearchTerm" />
+
+                        <input type="hidden"
+                               name="recipe.Ingredients[@j].Quantity"
+                               value="@Model.Ingredients[j].Quantity" />
+
+                        <input type="hidden"
+                               name="recipe.Ingredients[@j].Unit"
+                               value="@Model.Ingredients[j].Unit" />
+                    }
+
+                    @for (int j = 0; j < Model.Instructions.Count; j++)
+                    {
+                        <input type="hidden"
+                               name="recipe.Instructions[@j]"
+                               value="@Model.Instructions[j]" />
+                    }
+
+                    @for (int j = 0; j < Model.HealthyAlternatives.Count; j++)
+                    {
+                        <input type="hidden"
+                               name="recipe.HealthyAlternatives[@j].OriginalIngredientName"
+                               value="@Model.HealthyAlternatives[j].OriginalIngredientName" />
+
+                        <input type="hidden"
+                               name="recipe.HealthyAlternatives[@j].AlternativeName"
+                               value="@Model.HealthyAlternatives[j].AlternativeName" />
+
+                        <input type="hidden"
+                               name="recipe.HealthyAlternatives[@j].UsdaSearchTerm"
+                               value="@Model.HealthyAlternatives[j].UsdaSearchTerm" />
+
+                        <input type="hidden"
+                               name="recipe.HealthyAlternatives[@j].QuantityGrams"
+                               value="@Model.HealthyAlternatives[j].QuantityGrams" />
+
+                        <input type="hidden"
+                               name="recipe.HealthyAlternatives[@j].Reason"
+                               value="@Model.HealthyAlternatives[j].Reason" />
+                    }
+
+                    <button type="submit" class="btn btn-outline-success">
+                        Замени продукта
+                    </button>
+
+                </form>
+
+            </div>
+        }
+    }
+    else
+    {
+        <p class="text-muted">
+            Няма останали предложения за замяна.
+        </p>
+    }
+
+    <hr/>
+
+    <div class="d-flex gap-2 mt-4 flex-wrap">
+
+        <a asp-controller="Recipes"
+           asp-action="Index"
+           class="btn btn-outline-secondary">
+            Нова рецепта с други продукти
+        </a>
+
+        <form asp-controller="Recipes"
+              asp-action="GenerateAnother"
+              method="post">
+
+            <input type="hidden"
+                   name="Ingredients"
+                   value="@ViewBag.Ingredients" />
+
+            <input type="hidden"
+                   name="TargetCalories"
+                   value="@ViewBag.TargetCalories" />
+
+            <input type="hidden"
+                   name="Servings"
+                   value="@ViewBag.Servings" />
+
+            <button type="submit" class="btn btn-success">
+                Генерирай друга рецепта
+            </button>
+
+        </form>
+
+        <form asp-controller="Recipes"
+              asp-action="Save"
+              method="post"
+              class="mt-4">
+
+            <!-- Основни параметри -->
+            <input type="hidden"
+                   name="servings"
+                   value="@ViewBag.Servings" />
+
+            <input type="hidden"
+                   name="targetCalories"
+                   value="@ViewBag.TargetCalories" />
+
+            <!-- Информация за рецептата -->
+            <input type="hidden"
+                   name="recipe.Name"
+                   value="@Model.Name" />
+
+            <input type="hidden"
+                   name="recipe.Description"
+                   value="@Model.Description" />
+
+            <input type="hidden"
+                   name="recipe.PreparationTimeMinutes"
+                   value="@Model.PreparationTimeMinutes" />
+
+            <!-- Инструкции -->
+            @for (int i = 0; i < Model.Instructions.Count; i++)
+            {
+                <input type="hidden"
+                       name="recipe.Instructions[@i]"
+                       value="@Model.Instructions[i]" />
+            }
+
+            <!-- Продукти -->
+            @for (int i = 0; i < Model.Ingredients.Count; i++)
+            {
+                <input type="hidden"
+                       name="recipe.Ingredients[@i].Name"
+                       value="@Model.Ingredients[i].Name" />
+
+                <input type="hidden"
+                       name="recipe.Ingredients[@i].UsdaSearchTerm"
+                       value="@Model.Ingredients[i].UsdaSearchTerm" />
+
+                <input type="hidden"
+                       name="recipe.Ingredients[@i].Quantity"
+                       value="@Model.Ingredients[i].Quantity" />
+
+                <input type="hidden"
+                       name="recipe.Ingredients[@i].Unit"
+                       value="@Model.Ingredients[i].Unit" />
+            }
+
+            <!-- Здравословни алтернативи -->
+            @for (int i = 0; i < Model.HealthyAlternatives.Count; i++)
+            {
+                <input type="hidden"
+                       name="recipe.HealthyAlternatives[@i].OriginalIngredientName"
+                       value="@Model.HealthyAlternatives[i].OriginalIngredientName" />
+
+                <input type="hidden"
+                       name="recipe.HealthyAlternatives[@i].AlternativeName"
+                       value="@Model.HealthyAlternatives[i].AlternativeName" />
+
+                <input type="hidden"
+                       name="recipe.HealthyAlternatives[@i].UsdaSearchTerm"
+                       value="@Model.HealthyAlternatives[i].UsdaSearchTerm" />
+
+                <input type="hidden"
+                       name="recipe.HealthyAlternatives[@i].QuantityGrams"
+                       value="@Model.HealthyAlternatives[i].QuantityGrams" />
+
+                <input type="hidden"
+                       name="recipe.HealthyAlternatives[@i].Reason"
+                       value="@Model.HealthyAlternatives[i].Reason" />
+            }
+
+            <!-- Хранителни стойности -->
+            <input type="hidden"
+                   name="recipe.Nutrition.TotalCalories"
+                   value="@Model.Nutrition.TotalCalories" />
+
+            <input type="hidden"
+                   name="recipe.Nutrition.TotalProtein"
+                   value="@Model.Nutrition.TotalProtein" />
+
+            <input type="hidden"
+                   name="recipe.Nutrition.TotalCarbs"
+                   value="@Model.Nutrition.TotalCarbs" />
+
+            <input type="hidden"
+                   name="recipe.Nutrition.TotalFat"
+                   value="@Model.Nutrition.TotalFat" />
+
+            <input type="hidden"
+                   name="recipe.Nutrition.CaloriesPerServing"
+                   value="@Model.Nutrition.CaloriesPerServing" />
+
+            <input type="hidden"
+                   name="recipe.Nutrition.ProteinPerServing"
+                   value="@Model.Nutrition.ProteinPerServing" />
+
+            <input type="hidden"
+                   name="recipe.Nutrition.CarbsPerServing"
+                   value="@Model.Nutrition.CarbsPerServing" />
+
+            <input type="hidden"
+                   name="recipe.Nutrition.FatPerServing"
+                   value="@Model.Nutrition.FatPerServing" />
+
+            <button type="submit" class="btn btn-success">
+                <i class="bi bi-bookmark"></i>
+                Запази рецептата
+            </button>
+
+        </form>
+
+    </div>
 
 </div>

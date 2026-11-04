@@ -1,0 +1,134 @@
+﻿@model FoodAssistant.Models.Recipe
+@using FoodAssistant.DTOs.Recipes
+
+@{
+    ViewData["Title"] = Model.Name;
+
+    var alternatives =
+        ViewBag.HealthyAlternatives as List<HealthyAlternativeDto>
+        ?? new List<HealthyAlternativeDto>();
+
+    var instructions = Model.Instructions.Split(
+        new[] { "\r\n", "\n" },
+        StringSplitOptions.RemoveEmptyEntries);
+}
+
+<div class="container mt-4">
+
+    <a asp-action="Saved"
+       class="btn btn-outline-secondary mb-3">
+        ← Назад към моите рецепти
+    </a>
+
+    <h1 class="mb-2">@Model.Name</h1>
+
+    <p class="text-muted">@Model.Description</p>
+
+    <hr />
+
+    <h3>Информация за рецептата</h3>
+
+    <div class="row mb-4">
+        <div class="col-md-4">
+            <strong>Порции:</strong> @Model.Servings
+        </div>
+
+        <div class="col-md-4">
+            <strong>Време:</strong>
+            @Model.PreparationTimeMinutes мин.
+        </div>
+
+        <div class="col-md-4">
+            <strong>Целеви калории:</strong>
+            @Model.TargetCaloriesPerServing kcal / порция
+        </div>
+    </div>
+
+    <h3>Хранителни стойности за една порция</h3>
+
+    <div class="row mb-4">
+        <div class="col-md-3">
+            <strong>Калории:</strong>
+            @Model.CaloriesPerServing kcal
+        </div>
+
+        <div class="col-md-3">
+            <strong>Протеини:</strong>
+            @Model.ProteinPerServing г.
+        </div>
+
+        <div class="col-md-3">
+            <strong>Въглехидрати:</strong>
+            @Model.CarbsPerServing г.
+        </div>
+
+        <div class="col-md-3">
+            <strong>Мазнини:</strong>
+            @Model.FatPerServing г.
+        </div>
+    </div>
+
+    <hr />
+
+    <h3>Необходими продукти</h3>
+
+    <ul class="mb-4">
+        @foreach (var item in Model.Ingredients)
+        {
+            <li>
+                @item.IngredientName –
+                @item.QuantityGrams.ToString("0.##") г.
+            </li>
+        }
+    </ul>
+
+    <hr />
+
+    <h3>Начин на приготвяне</h3>
+
+    <ol class="mb-4">
+        @foreach (var instruction in instructions)
+        {
+            <li class="mb-2">@instruction</li>
+        }
+    </ol>
+
+    <hr />
+
+    <h3>Здравословни алтернативи</h3>
+
+    @if (alternatives.Any())
+    {
+        @foreach (var alternative in alternatives)
+        {
+            <div class="card mb-3">
+                <div class="card-body">
+
+                    <h5>
+                        @alternative.OriginalIngredientName
+                        →
+                        @alternative.AlternativeName
+                    </h5>
+
+                    <p>
+                        <strong>Количество:</strong>
+                        @alternative.QuantityGrams г.
+                    </p>
+
+                    <p>
+                        <strong>Причина:</strong>
+                        @alternative.Reason
+                    </p>
+
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <p class="text-muted">
+            Няма предложени здравословни алтернативи.
+        </p>
+    }
+
+</div>

@@ -20,8 +20,19 @@ namespace FoodAssistant.Models
         public string Instructions { get; set; } = string.Empty;
 
         public DateTime CreatedAtUtc { get; set; } = DateTime.UtcNow;
+        public int TargetCaloriesPerServing { get; set; }
+
+        public decimal CaloriesPerServing { get; set; }
+
+        public decimal ProteinPerServing { get; set; }
+
+        public decimal CarbsPerServing { get; set; }
+
+        public decimal FatPerServing { get; set; }
 
         // Продуктите, които участват в рецептата
         public ICollection<RecipeIngredient> Ingredients { get; set; } = new List<RecipeIngredient>();
+
+        public string HealthyAlternativesJson { get; set; } = "[]";
     }
 }

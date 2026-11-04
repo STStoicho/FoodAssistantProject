@@ -57,10 +57,23 @@ namespace FoodAssistant.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<decimal>("CaloriesPerServing")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("CarbsPerServing")
+                        .HasColumnType("TEXT");
+
                     b.Property<DateTime>("CreatedAtUtc")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("FatPerServing")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("HealthyAlternativesJson")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
@@ -76,7 +89,13 @@ namespace FoodAssistant.Migrations
                     b.Property<int>("PreparationTimeMinutes")
                         .HasColumnType("INTEGER");
 
+                    b.Property<decimal>("ProteinPerServing")
+                        .HasColumnType("TEXT");
+
                     b.Property<int>("Servings")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("TargetCaloriesPerServing")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
@@ -92,6 +111,11 @@ namespace FoodAssistant.Migrations
 
                     b.Property<int>("IngredientId")
                         .HasColumnType("INTEGER");
+
+                    b.Property<string>("IngredientName")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("TEXT");
 
                     b.Property<decimal>("QuantityGrams")
                         .HasColumnType("TEXT");

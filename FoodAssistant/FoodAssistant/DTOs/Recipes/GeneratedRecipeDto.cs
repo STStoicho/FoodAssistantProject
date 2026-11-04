@@ -12,15 +12,18 @@
 
         public List<string> Instructions { get; set; } = new();
 
-        public List<string> HealthyAlternatives { get; set; } = new();
+        public List<HealthyAlternativeDto> HealthyAlternatives { get; set; } = new();
+        public NutritionSummaryDto Nutrition { get; set; } = new();
     }
 
     public class GeneratedRecipeIngredientDto
     {
         public string Name { get; set; } = string.Empty;
 
+        public string UsdaSearchTerm { get; set; } = string.Empty;
+
         public decimal Quantity { get; set; }
 
-        public string Unit { get; set; } = string.Empty;
+        public string Unit { get; set; } = "g";
     }
 }

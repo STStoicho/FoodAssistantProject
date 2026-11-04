@@ -3,63 +3,103 @@
   "WorkspaceRootPath": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{72A4F8C5-0CF0-4B15-B776-FA839EF2C21B}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\views\\recipes\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{72A4F8C5-0CF0-4B15-B776-FA839EF2C21B}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\views\\recipes\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\views\\recipes\\saved.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\views\\recipes\\saved.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72A4F8C5-0CF0-4B15-B776-FA839EF2C21B}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{72A4F8C5-0CF0-4B15-B776-FA839EF2C21B}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\controllers\\recipescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\controllers\\recipescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72A4F8C5-0CF0-4B15-B776-FA839EF2C21B}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\services\\airecipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72A4F8C5-0CF0-4B15-B776-FA839EF2C21B}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\services\\airecipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\views\\recipes\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\views\\recipes\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72A4F8C5-0CF0-4B15-B776-FA839EF2C21B}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\views\\recipes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{72A4F8C5-0CF0-4B15-B776-FA839EF2C21B}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\views\\recipes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\views\\recipes\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\views\\recipes\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72A4F8C5-0CF0-4B15-B776-FA839EF2C21B}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\dtos\\fooddatacentral\\fooddetailsresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72A4F8C5-0CF0-4B15-B776-FA839EF2C21B}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\dtos\\fooddatacentral\\fooddetailsresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\services\\nutritionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\services\\nutritionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Migrations\\20261104180903_ThirdMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FoodAssistant\\Migrations\\20261104180903_ThirdMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\models\\recipeingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\models\\recipeingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\models\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\models\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\models\\ingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\models\\ingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\services\\airecipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\services\\airecipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\dtos\\fooddatacentral\\fooddetailsresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\dtos\\fooddatacentral\\fooddetailsresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\dtos\\recipes\\nutritionsummarydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\dtos\\recipes\\nutritionsummarydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\dtos\\recipes\\healthyalternativedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\dtos\\recipes\\healthyalternativedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\dtos\\recipes\\generatedrecipedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\dtos\\recipes\\generatedrecipedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\services\\fooddatacentralservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\services\\fooddatacentralservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Stoicho\\AppData\\Roaming\\Microsoft\\UserSecrets\\e13970b0-6bb9-421e-a4bf-fbd2f4dc456a\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72A4F8C5-0CF0-4B15-B776-FA839EF2C21B}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\controllers\\recipescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72A4F8C5-0CF0-4B15-B776-FA839EF2C21B}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\controllers\\recipescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\views\\recipes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\views\\recipes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72A4F8C5-0CF0-4B15-B776-FA839EF2C21B}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\services\\fooddatacentralservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72A4F8C5-0CF0-4B15-B776-FA839EF2C21B}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\services\\fooddatacentralservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72A4F8C5-0CF0-4B15-B776-FA839EF2C21B}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72A4F8C5-0CF0-4B15-B776-FA839EF2C21B}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\viewmodels\\recipegeneratorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\viewmodels\\recipegeneratorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72A4F8C5-0CF0-4B15-B776-FA839EF2C21B}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\viewmodels\\recipegeneratorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72A4F8C5-0CF0-4B15-B776-FA839EF2C21B}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\viewmodels\\recipegeneratorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\dtos\\fooddatacentral\\foodsearchresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\dtos\\fooddatacentral\\foodsearchresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72A4F8C5-0CF0-4B15-B776-FA839EF2C21B}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\dtos\\fooddatacentral\\foodsearchresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72A4F8C5-0CF0-4B15-B776-FA839EF2C21B}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\dtos\\fooddatacentral\\foodsearchresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72A4F8C5-0CF0-4B15-B776-FA839EF2C21B}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72A4F8C5-0CF0-4B15-B776-FA839EF2C21B}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72A4F8C5-0CF0-4B15-B776-FA839EF2C21B}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\models\\recipeingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72A4F8C5-0CF0-4B15-B776-FA839EF2C21B}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\models\\recipeingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72A4F8C5-0CF0-4B15-B776-FA839EF2C21B}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\models\\ingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72A4F8C5-0CF0-4B15-B776-FA839EF2C21B}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\models\\ingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72A4F8C5-0CF0-4B15-B776-FA839EF2C21B}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\models\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72A4F8C5-0CF0-4B15-B776-FA839EF2C21B}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\models\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|c:\\users\\stoicho\\desktop\\projects\\foodassistant\\foodassistant\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65C85C33-CC34-BA87-17B5-7A9C01DB88EB}|FoodAssistant\\FoodAssistant.csproj|solutionrelative:foodassistant\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -69,180 +109,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "RecipesController.cs",
-              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Controllers\\RecipesController.cs",
-              "RelativeDocumentMoniker": "FoodAssistant\\Controllers\\RecipesController.cs",
-              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Controllers\\RecipesController.cs",
-              "RelativeToolTip": "FoodAssistant\\Controllers\\RecipesController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACEAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-03T11:19:55.224Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FoodDataCentralService.cs",
-              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Services\\FoodDataCentralService.cs",
-              "RelativeDocumentMoniker": "FoodAssistant\\Services\\FoodDataCentralService.cs",
-              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Services\\FoodDataCentralService.cs",
-              "RelativeToolTip": "FoodAssistant\\Services\\FoodDataCentralService.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAADwvzgAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-03T11:13:52.981Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "secrets.json",
-              "DocumentMoniker": "C:\\Users\\Stoicho\\AppData\\Roaming\\Microsoft\\UserSecrets\\e13970b0-6bb9-421e-a4bf-fbd2f4dc456a\\secrets.json",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\e13970b0-6bb9-421e-a4bf-fbd2f4dc456a\\secrets.json",
-              "ToolTip": "C:\\Users\\Stoicho\\AppData\\Roaming\\Microsoft\\UserSecrets\\e13970b0-6bb9-421e-a4bf-fbd2f4dc456a\\secrets.json",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\e13970b0-6bb9-421e-a4bf-fbd2f4dc456a\\secrets.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-11-03T11:12:16.658Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FoodDetailsResponseDto.cs",
-              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\DTOs\\FoodDataCentral\\FoodDetailsResponseDto.cs",
-              "RelativeDocumentMoniker": "FoodAssistant\\DTOs\\FoodDataCentral\\FoodDetailsResponseDto.cs",
-              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\DTOs\\FoodDataCentral\\FoodDetailsResponseDto.cs",
-              "RelativeToolTip": "FoodAssistant\\DTOs\\FoodDataCentral\\FoodDetailsResponseDto.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAUwCMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-03T11:05:45.605Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Views\\Recipes\\Index.cshtml",
-              "RelativeDocumentMoniker": "FoodAssistant\\Views\\Recipes\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Views\\Recipes\\Index.cshtml",
-              "RelativeToolTip": "FoodAssistant\\Views\\Recipes\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-03T11:21:15.296Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AiRecipeService.cs",
-              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Services\\AiRecipeService.cs",
-              "RelativeDocumentMoniker": "FoodAssistant\\Services\\AiRecipeService.cs",
-              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Services\\AiRecipeService.cs",
-              "RelativeToolTip": "FoodAssistant\\Services\\AiRecipeService.cs",
-              "ViewState": "AgIAALkAAAAAAAAAAAAIwAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-03T11:41:25.569Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\appsettings.json",
-              "RelativeDocumentMoniker": "FoodAssistant\\appsettings.json",
-              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\appsettings.json",
-              "RelativeToolTip": "FoodAssistant\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-11-03T10:59:08.378Z",
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Views\\Recipes\\Details.cshtml",
+              "RelativeDocumentMoniker": "FoodAssistant\\Views\\Recipes\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Views\\Recipes\\Details.cshtml",
+              "RelativeToolTip": "FoodAssistant\\Views\\Recipes\\Details.cshtml",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-04T18:25:05.384Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Result.cshtml",
-              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Views\\Recipes\\Result.cshtml",
-              "RelativeDocumentMoniker": "FoodAssistant\\Views\\Recipes\\Result.cshtml",
-              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Views\\Recipes\\Result.cshtml",
-              "RelativeToolTip": "FoodAssistant\\Views\\Recipes\\Result.cshtml",
-              "ViewState": "AgIAACMAAAAAAAAAAAAAACQAAAA4AAAAAAAAAA==",
+              "Title": "Saved.cshtml",
+              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Views\\Recipes\\Saved.cshtml",
+              "RelativeDocumentMoniker": "FoodAssistant\\Views\\Recipes\\Saved.cshtml",
+              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Views\\Recipes\\Saved.cshtml",
+              "RelativeToolTip": "FoodAssistant\\Views\\Recipes\\Saved.cshtml",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAAAIYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-03T11:47:27.655Z",
+              "WhenOpened": "2026-11-04T18:16:13.37Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "RecipeGeneratorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\ViewModels\\RecipeGeneratorViewModel.cs",
-              "RelativeDocumentMoniker": "FoodAssistant\\ViewModels\\RecipeGeneratorViewModel.cs",
-              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\ViewModels\\RecipeGeneratorViewModel.cs",
-              "RelativeToolTip": "FoodAssistant\\ViewModels\\RecipeGeneratorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAuAAAAAAAAAA==",
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "FoodAssistant\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "FoodAssistant\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-03T11:31:41.39Z",
+              "WhenOpened": "2026-11-04T18:05:37.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Recipe.cs",
+              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Models\\Recipe.cs",
+              "RelativeDocumentMoniker": "FoodAssistant\\Models\\Recipe.cs",
+              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Models\\Recipe.cs",
+              "RelativeToolTip": "FoodAssistant\\Models\\Recipe.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA0wCMAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-03T10:55:48.151Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Program.cs",
-              "RelativeDocumentMoniker": "FoodAssistant\\Program.cs",
-              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Program.cs",
-              "RelativeToolTip": "FoodAssistant\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-03T10:59:37.58Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FoodSearchResponseDto.cs",
-              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\DTOs\\FoodDataCentral\\FoodSearchResponseDto.cs",
-              "RelativeDocumentMoniker": "FoodAssistant\\DTOs\\FoodDataCentral\\FoodSearchResponseDto.cs",
-              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\DTOs\\FoodDataCentral\\FoodSearchResponseDto.cs",
-              "RelativeToolTip": "FoodAssistant\\DTOs\\FoodDataCentral\\FoodSearchResponseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-03T11:04:34.41Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "FoodAssistant\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "FoodAssistant\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA5wAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-03T10:58:34.145Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "RecipeIngredient.cs",
-              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Models\\RecipeIngredient.cs",
-              "RelativeDocumentMoniker": "FoodAssistant\\Models\\RecipeIngredient.cs",
-              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Models\\RecipeIngredient.cs",
-              "RelativeToolTip": "FoodAssistant\\Models\\RecipeIngredient.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-03T10:57:22.271Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
               "Title": "Ingredient.cs",
               "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Models\\Ingredient.cs",
               "RelativeDocumentMoniker": "FoodAssistant\\Models\\Ingredient.cs",
@@ -255,16 +178,255 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Recipe.cs",
-              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Models\\Recipe.cs",
-              "RelativeDocumentMoniker": "FoodAssistant\\Models\\Recipe.cs",
-              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Models\\Recipe.cs",
-              "RelativeToolTip": "FoodAssistant\\Models\\Recipe.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAABHAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "FoodDetailsResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\DTOs\\FoodDataCentral\\FoodDetailsResponseDto.cs",
+              "RelativeDocumentMoniker": "FoodAssistant\\DTOs\\FoodDataCentral\\FoodDetailsResponseDto.cs",
+              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\DTOs\\FoodDataCentral\\FoodDetailsResponseDto.cs",
+              "RelativeToolTip": "FoodAssistant\\DTOs\\FoodDataCentral\\FoodDetailsResponseDto.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAmwB8AAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-03T10:55:48.151Z",
+              "WhenOpened": "2026-11-03T11:05:45.605Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AiRecipeService.cs",
+              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Services\\AiRecipeService.cs",
+              "RelativeDocumentMoniker": "FoodAssistant\\Services\\AiRecipeService.cs",
+              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Services\\AiRecipeService.cs",
+              "RelativeToolTip": "FoodAssistant\\Services\\AiRecipeService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAADwvx8AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-03T11:41:25.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NutritionService.cs",
+              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Services\\NutritionService.cs",
+              "RelativeDocumentMoniker": "FoodAssistant\\Services\\NutritionService.cs",
+              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Services\\NutritionService.cs",
+              "RelativeToolTip": "FoodAssistant\\Services\\NutritionService.cs",
+              "ViewState": "AgIAANcAAAAAAAAAAAAuwPEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T15:00:22.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RecipesController.cs",
+              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Controllers\\RecipesController.cs",
+              "RelativeDocumentMoniker": "FoodAssistant\\Controllers\\RecipesController.cs",
+              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Controllers\\RecipesController.cs",
+              "RelativeToolTip": "FoodAssistant\\Controllers\\RecipesController.cs",
+              "ViewState": "AgIAALoAAAAAAAAAAAAiwMMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-03T11:19:55.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Result.cshtml",
+              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Views\\Recipes\\Result.cshtml",
+              "RelativeDocumentMoniker": "FoodAssistant\\Views\\Recipes\\Result.cshtml",
+              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Views\\Recipes\\Result.cshtml",
+              "RelativeToolTip": "FoodAssistant\\Views\\Recipes\\Result.cshtml",
+              "ViewState": "AgIAAEkBAAAAAAAAAAAUwIoBAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-03T11:47:27.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20261104180903_ThirdMigration.cs",
+              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Migrations\\20261104180903_ThirdMigration.cs",
+              "RelativeDocumentMoniker": "FoodAssistant\\Migrations\\20261104180903_ThirdMigration.cs",
+              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Migrations\\20261104180903_ThirdMigration.cs",
+              "RelativeToolTip": "FoodAssistant\\Migrations\\20261104180903_ThirdMigration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T18:09:03.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "NutritionSummaryDto.cs",
+              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\DTOs\\Recipes\\NutritionSummaryDto.cs",
+              "RelativeDocumentMoniker": "FoodAssistant\\DTOs\\Recipes\\NutritionSummaryDto.cs",
+              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\DTOs\\Recipes\\NutritionSummaryDto.cs",
+              "RelativeToolTip": "FoodAssistant\\DTOs\\Recipes\\NutritionSummaryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T14:59:35.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HealthyAlternativeDto.cs",
+              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\DTOs\\Recipes\\HealthyAlternativeDto.cs",
+              "RelativeDocumentMoniker": "FoodAssistant\\DTOs\\Recipes\\HealthyAlternativeDto.cs",
+              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\DTOs\\Recipes\\HealthyAlternativeDto.cs",
+              "RelativeToolTip": "FoodAssistant\\DTOs\\Recipes\\HealthyAlternativeDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T15:08:31.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RecipeIngredient.cs",
+              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Models\\RecipeIngredient.cs",
+              "RelativeDocumentMoniker": "FoodAssistant\\Models\\RecipeIngredient.cs",
+              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Models\\RecipeIngredient.cs",
+              "RelativeToolTip": "FoodAssistant\\Models\\RecipeIngredient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-03T10:57:22.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GeneratedRecipeDto.cs",
+              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\DTOs\\Recipes\\GeneratedRecipeDto.cs",
+              "RelativeDocumentMoniker": "FoodAssistant\\DTOs\\Recipes\\GeneratedRecipeDto.cs",
+              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\DTOs\\Recipes\\GeneratedRecipeDto.cs",
+              "RelativeToolTip": "FoodAssistant\\DTOs\\Recipes\\GeneratedRecipeDto.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwA4AAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T14:52:52.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FoodDataCentralService.cs",
+              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Services\\FoodDataCentralService.cs",
+              "RelativeDocumentMoniker": "FoodAssistant\\Services\\FoodDataCentralService.cs",
+              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Services\\FoodDataCentralService.cs",
+              "RelativeToolTip": "FoodAssistant\\Services\\FoodDataCentralService.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAADwvzgAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-03T11:13:52.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "FoodAssistant\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "FoodAssistant\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAB8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-04T16:05:29.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Program.cs",
+              "RelativeDocumentMoniker": "FoodAssistant\\Program.cs",
+              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Program.cs",
+              "RelativeToolTip": "FoodAssistant\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-03T10:59:37.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Views\\Recipes\\Index.cshtml",
+              "RelativeDocumentMoniker": "FoodAssistant\\Views\\Recipes\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Views\\Recipes\\Index.cshtml",
+              "RelativeToolTip": "FoodAssistant\\Views\\Recipes\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-03T11:21:15.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "FoodAssistant\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "FoodAssistant\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-04T16:05:28.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "secrets.json",
+              "DocumentMoniker": "C:\\Users\\Stoicho\\AppData\\Roaming\\Microsoft\\UserSecrets\\e13970b0-6bb9-421e-a4bf-fbd2f4dc456a\\secrets.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\e13970b0-6bb9-421e-a4bf-fbd2f4dc456a\\secrets.json",
+              "ToolTip": "C:\\Users\\Stoicho\\AppData\\Roaming\\Microsoft\\UserSecrets\\e13970b0-6bb9-421e-a4bf-fbd2f4dc456a\\secrets.json",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\e13970b0-6bb9-421e-a4bf-fbd2f4dc456a\\secrets.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-11-03T11:12:16.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\appsettings.json",
+              "RelativeDocumentMoniker": "FoodAssistant\\appsettings.json",
+              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\appsettings.json",
+              "RelativeToolTip": "FoodAssistant\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-11-03T10:59:08.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "RecipeGeneratorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\ViewModels\\RecipeGeneratorViewModel.cs",
+              "RelativeDocumentMoniker": "FoodAssistant\\ViewModels\\RecipeGeneratorViewModel.cs",
+              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\ViewModels\\RecipeGeneratorViewModel.cs",
+              "RelativeToolTip": "FoodAssistant\\ViewModels\\RecipeGeneratorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-03T11:31:41.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "FoodSearchResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\DTOs\\FoodDataCentral\\FoodSearchResponseDto.cs",
+              "RelativeDocumentMoniker": "FoodAssistant\\DTOs\\FoodDataCentral\\FoodSearchResponseDto.cs",
+              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\DTOs\\FoodDataCentral\\FoodSearchResponseDto.cs",
+              "RelativeToolTip": "FoodAssistant\\DTOs\\FoodDataCentral\\FoodSearchResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-03T11:04:34.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "FoodAssistant\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Stoicho\\Desktop\\Projects\\FoodAssistant\\FoodAssistant\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "FoodAssistant\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA5wAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-03T10:58:34.145Z"
             }
           ]
         }

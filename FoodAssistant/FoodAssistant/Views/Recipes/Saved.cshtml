@@ -1,0 +1,136 @@
+﻿@model IEnumerable<FoodAssistant.Models.Recipe>
+
+@{
+    ViewData["Title"] = "Моите рецепти";
+}
+
+<div class="container mt-4">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h1>Моите рецепти</h1>
+            <p class="text-muted">
+                Всички рецепти, които си запазил в NutriAI.
+            </p>
+        </div>
+    </div>
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["ErrorMessage"]
+        </div>
+    }
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info text-center p-4">
+            <h4>Все още нямаш запазени рецепти.</h4>
+            <p>Генерирай рецепта и я запази, за да се появи тук.</p>
+
+            <a asp-controller="Recipes"
+               asp-action="Index"
+               class="btn btn-primary">
+                Генерирай рецепта
+            </a>
+        </div>
+    }
+    else
+    {
+        <div class="row">
+            @foreach (var recipe in Model)
+            {
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                @recipe.Name
+                            </h5>
+
+                            <p class="card-text text-muted">
+                                @recipe.Description
+                            </p>
+
+                            <hr />
+
+                            <p>
+                                <strong>Порции:</strong>
+                                @recipe.Servings
+                            </p>
+
+                            <p>
+                                <strong>Време за приготвяне:</strong>
+                                @recipe.PreparationTimeMinutes мин.
+                            </p>
+
+                            <p>
+                                <strong>Калории:</strong>
+                                @recipe.CaloriesPerServing kcal / порция
+                            </p>
+
+                            <p>
+                                <strong>Протеини:</strong>
+                                @recipe.ProteinPerServing г
+                            </p>
+
+                            <p>
+                                <strong>Въглехидрати:</strong>
+                                @recipe.CarbsPerServing г
+                            </p>
+
+                            <p>
+                                <strong>Мазнини:</strong>
+                                @recipe.FatPerServing г
+                            </p>
+
+                        </div>
+
+                        <div class="card-footer">
+
+                            <small class="text-muted d-block mb-3">
+                                Запазена на:
+                                @recipe.CreatedAtUtc.ToLocalTime().ToString("dd.MM.yyyy HH:mm")
+                            </small>
+
+                            <div class="d-flex gap-2">
+
+                                <a asp-controller="Recipes"
+                                   asp-action="Details"
+                                   asp-route-id="@recipe.Id"
+                                   class="btn btn-primary flex-grow-1">
+                                    Разгледай
+                                </a>
+
+                                <form asp-controller="Recipes"
+                                      asp-action="Delete"
+                                      asp-route-id="@recipe.Id"
+                                      method="post"
+                                      onsubmit="return confirm('Сигурни ли сте, че искате да изтриете тази рецепта?');">
+
+                                    <button type="submit"
+                                            class="btn btn-danger">
+                                        <i class="bi bi-trash"></i>
+                                        Изтрий
+                                    </button>
+
+                                </form>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>

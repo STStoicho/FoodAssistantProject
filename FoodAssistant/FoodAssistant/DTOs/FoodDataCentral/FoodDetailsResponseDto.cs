@@ -25,6 +25,9 @@ namespace FoodAssistant.DTOs.FoodDataCentral
 
     public class NutrientInfoDto
     {
+        [JsonPropertyName("id")]
+        public int Id { get; set; }
+
         [JsonPropertyName("number")]
         public string Number { get; set; } = string.Empty;
 
