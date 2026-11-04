@@ -1,0 +1,82 @@
+﻿@model FoodAssistant.ViewModels.RecipeGeneratorViewModel
+
+@{
+    ViewData["Title"] = "Генериране на рецепта";
+}
+
+<div class="container mt-5">
+
+    <div class="text-center mb-4">
+        <h1>Food Assistant</h1>
+        <p class="text-muted">
+            Създай вкусна рецепта според продуктите, с които разполагаш.
+        </p>
+    </div>
+
+    <div class="card shadow-sm p-4 mx-auto" style="max-width: 650px;">
+
+        <h4 class="mb-3">Генериране на рецепта</h4>
+
+        @if (ViewBag.Error != null)
+        {
+            <div class="alert alert-danger">
+                @ViewBag.Error
+            </div>
+        }
+
+        <form asp-controller="Recipes"
+              asp-action="Generate"
+              method="post">
+
+            <div class="mb-3">
+                <label asp-for="Ingredients" class="form-label">
+                    Налични продукти
+                </label>
+
+                <textarea asp-for="Ingredients"
+                          class="form-control"
+                          rows="5"
+                          placeholder="Например: пилешко месо, ориз, домати, лук">
+                </textarea>
+
+                <span asp-validation-for="Ingredients"
+                      class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="TargetCalories" class="form-label">
+                    Желани калории на порция
+                </label>
+
+                <input asp-for="TargetCalories"
+                       type="number"
+                       class="form-control" />
+
+                <span asp-validation-for="TargetCalories"
+                      class="text-danger"></span>
+            </div>
+
+            <div class="mb-4">
+                <label asp-for="Servings" class="form-label">
+                    Брой порции
+                </label>
+
+                <input asp-for="Servings"
+                       type="number"
+                       class="form-control" />
+
+                <span asp-validation-for="Servings"
+                      class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-success w-100">
+                Генерирай рецепта
+            </button>
+
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

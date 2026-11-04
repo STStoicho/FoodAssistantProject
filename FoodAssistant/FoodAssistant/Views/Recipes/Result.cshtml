@@ -1,0 +1,60 @@
+﻿@model FoodAssistant.DTOs.Recipes.GeneratedRecipeDto
+
+@{
+    ViewData["Title"] = "Генерирана рецепта";
+}
+
+<div class="container mt-5">
+
+    <h1>@Model.Name</h1>
+
+    <p class="text-muted">@Model.Description</p>
+
+    <p>
+        <strong>Време за приготвяне:</strong>
+        @Model.PreparationTimeMinutes минути
+    </p>
+
+    <hr />
+
+    <h3>Необходими продукти</h3>
+
+    <ul>
+        @foreach (var ingredient in Model.Ingredients)
+        {
+            <li>
+                @ingredient.Name -
+                @ingredient.Quantity @ingredient.Unit
+            </li>
+        }
+    </ul>
+
+    <hr />
+
+    <h3>Начин на приготвяне</h3>
+
+    <ol>
+        @foreach (var instruction in Model.Instructions)
+        {
+            <li class="mb-2">@instruction</li>
+        }
+    </ol>
+
+    <hr />
+
+    <h3>Здравословни алтернативи</h3>
+
+    <ul>
+        @foreach (var alternative in Model.HealthyAlternatives)
+        {
+            <li>@alternative</li>
+        }
+    </ul>
+
+    <a asp-controller="Recipes"
+       asp-action="Index"
+       class="btn btn-success mt-3">
+        Генерирай друга рецепта
+    </a>
+
+</div>
