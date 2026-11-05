@@ -8,127 +8,354 @@
         ViewBag.HealthyAlternatives as List<HealthyAlternativeDto>
         ?? new List<HealthyAlternativeDto>();
 
-    var instructions = Model.Instructions.Split(
+    var instructions = (Model.Instructions ?? string.Empty).Split(
         new[] { "\r\n", "\n" },
         StringSplitOptions.RemoveEmptyEntries);
 }
 
-<div class="container mt-4">
+<div class="recipe-details-page">
 
-    <a asp-action="Saved"
-       class="btn btn-outline-secondary mb-3">
-        ← Назад към моите рецепти
-    </a>
+    <!-- NAVIGATION -->
+    <div class="details-navigation">
 
-    <h1 class="mb-2">@Model.Name</h1>
+        <a asp-controller="Recipes"
+           asp-action="Saved"
+           class="details-back-link">
+            ← Назад към моите рецепти
+        </a>
 
-    <p class="text-muted">@Model.Description</p>
-
-    <hr />
-
-    <h3>Информация за рецептата</h3>
-
-    <div class="row mb-4">
-        <div class="col-md-4">
-            <strong>Порции:</strong> @Model.Servings
-        </div>
-
-        <div class="col-md-4">
-            <strong>Време:</strong>
-            @Model.PreparationTimeMinutes мин.
-        </div>
-
-        <div class="col-md-4">
-            <strong>Целеви калории:</strong>
-            @Model.TargetCaloriesPerServing kcal / порция
-        </div>
     </div>
 
-    <h3>Хранителни стойности за една порция</h3>
+    <!-- RECIPE HEADER -->
+    <section class="details-hero">
 
-    <div class="row mb-4">
-        <div class="col-md-3">
-            <strong>Калории:</strong>
-            @Model.CaloriesPerServing kcal
+        <div class="details-hero-content">
+
+            <span class="details-eyebrow">
+                ♡ ЗАПАЗЕНА РЕЦЕПТА
+            </span>
+
+            <h1>@Model.Name</h1>
+
+            <p class="details-description">
+                @Model.Description
+            </p>
+
+            <div class="details-meta">
+
+                <div>
+                    <span>⏱️</span>
+                    @Model.PreparationTimeMinutes минути
+                </div>
+
+                <div>
+                    <span>👥</span>
+                    @Model.Servings порции
+                </div>
+
+                <div>
+                    <span>🔥</span>
+                    @Model.CaloriesPerServing.ToString("0.##") kcal / порция
+                </div>
+
+            </div>
+
         </div>
 
-        <div class="col-md-3">
-            <strong>Протеини:</strong>
-            @Model.ProteinPerServing г.
+        <div class="details-calorie-box">
+
+            <span>КАЛОРИИ ЗА ПОРЦИЯ</span>
+
+            <strong>
+                @Model.CaloriesPerServing.ToString("0.##")
+            </strong>
+
+            <small>kcal</small>
+
         </div>
 
-        <div class="col-md-3">
-            <strong>Въглехидрати:</strong>
-            @Model.CarbsPerServing г.
+    </section>
+
+    <!-- NUTRITION -->
+    <section class="details-section">
+
+        <div class="details-section-heading">
+
+            <div>
+
+                <h2>Хранителни стойности</h2>
+
+            </div>
+
+            <span class="details-section-icon">📊</span>
+
         </div>
 
-        <div class="col-md-3">
-            <strong>Мазнини:</strong>
-            @Model.FatPerServing г.
+        <div class="nutrition-heading">
+            <span>За една порция</span>
+            <span class="nutrition-heading-line"></span>
         </div>
-    </div>
 
-    <hr />
+        <div class="row g-3">
 
-    <h3>Необходими продукти</h3>
-
-    <ul class="mb-4">
-        @foreach (var item in Model.Ingredients)
-        {
-            <li>
-                @item.IngredientName –
-                @item.QuantityGrams.ToString("0.##") г.
-            </li>
-        }
-    </ul>
-
-    <hr />
-
-    <h3>Начин на приготвяне</h3>
-
-    <ol class="mb-4">
-        @foreach (var instruction in instructions)
-        {
-            <li class="mb-2">@instruction</li>
-        }
-    </ol>
-
-    <hr />
-
-    <h3>Здравословни алтернативи</h3>
-
-    @if (alternatives.Any())
-    {
-        @foreach (var alternative in alternatives)
-        {
-            <div class="card mb-3">
-                <div class="card-body">
-
-                    <h5>
-                        @alternative.OriginalIngredientName
-                        →
-                        @alternative.AlternativeName
-                    </h5>
-
-                    <p>
-                        <strong>Количество:</strong>
-                        @alternative.QuantityGrams г.
-                    </p>
-
-                    <p>
-                        <strong>Причина:</strong>
-                        @alternative.Reason
-                    </p>
-
+            <div class="col-6 col-lg-3">
+                <div class="details-nutrition-card">
+                    <div class="details-nutrition-icon">🔥</div>
+                    <span>Калории</span>
+                    <strong>
+                        @Model.CaloriesPerServing.ToString("0.##")
+                    </strong>
+                    <small>kcal</small>
                 </div>
             </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="details-nutrition-card">
+                    <div class="details-nutrition-icon">💪</div>
+                    <span>Протеини</span>
+                    <strong>
+                        @Model.ProteinPerServing.ToString("0.##")
+                    </strong>
+                    <small>грама</small>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="details-nutrition-card">
+                    <div class="details-nutrition-icon">🌾</div>
+                    <span>Въглехидрати</span>
+                    <strong>
+                        @Model.CarbsPerServing.ToString("0.##")
+                    </strong>
+                    <small>грама</small>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="details-nutrition-card">
+                    <div class="details-nutrition-icon">🥑</div>
+                    <span>Мазнини</span>
+                    <strong>
+                        @Model.FatPerServing.ToString("0.##")
+                    </strong>
+                    <small>грама</small>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="details-target-calories">
+            <span>🎯 Зададени целеви калории:</span>
+            <strong>@Model.TargetCaloriesPerServing kcal / порция</strong>
+        </div>
+
+    </section>
+
+    <!-- INGREDIENTS AND INSTRUCTIONS -->
+    <div class="row g-4 details-main-content">
+
+        <!-- INGREDIENTS -->
+        <div class="col-lg-5">
+
+            <section class="details-content-card h-100">
+
+                <div class="details-section-heading">
+
+                    <div>
+
+                        <h2>Необходими продукти</h2>
+
+                    </div>
+
+                </div>
+
+                <div class="details-ingredient-list">
+
+                    @foreach (var item in Model.Ingredients)
+                    {
+                        var ingredientName =
+                            string.IsNullOrWhiteSpace(item.IngredientName)
+                                ? item.Ingredient?.Name
+                                : item.IngredientName;
+
+                        <div class="details-ingredient-item">
+
+                            <span class="details-ingredient-check">
+                                ✓
+                            </span>
+
+                            <span class="details-ingredient-name">
+                                @ingredientName
+                            </span>
+
+                            <strong>
+                                @item.QuantityGrams.ToString("0.##") г.
+                            </strong>
+
+                        </div>
+                    }
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- INSTRUCTIONS -->
+        <div class="col-lg-7">
+
+            <section class="details-content-card h-100">
+
+                <div class="details-section-heading">
+
+                    <div>
+
+                        <h2>Начин на приготвяне</h2>
+
+                    </div>
+
+                </div>
+
+                <div class="details-instructions">
+
+                    @if (instructions.Length > 0)
+                    {
+                        @for (int i = 0; i < instructions.Length; i++)
+                        {
+                            <div class="details-instruction-item">
+
+                                <span class="details-step-number">
+                                    @((i + 1).ToString("00"))
+                                </span>
+
+                                <p>@instructions[i]</p>
+
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <p class="text-muted">
+                            Няма записани инструкции за тази рецепта.
+                        </p>
+                    }
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </div>
+
+    <!-- HEALTHY ALTERNATIVES -->
+    <section class="details-section">
+
+        <div class="details-section-heading">
+
+            <div>
+
+                <h2>Здравословни алтернативи</h2>
+
+                <p>
+                    Замени някои от продуктите с предложените алтернативи.
+                </p>
+
+            </div>
+
+            <span class="details-section-icon">🌿</span>
+
+        </div>
+
+        @if (alternatives.Any())
+        {
+            <div class="row g-3">
+
+                @foreach (var alternative in alternatives)
+                {
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="details-alternative-card">
+
+                            <span class="details-alternative-label">
+                                ПРЕДЛОЖЕНА ЗАМЯНА
+                            </span>
+
+                            <div class="details-alternative-product">
+                                <small>Оригинален продукт</small>
+                                <strong>
+                                    @alternative.OriginalIngredientName
+                                </strong>
+                            </div>
+
+                            <div class="details-alternative-arrow">
+                                ↓
+                            </div>
+
+                            <div class="details-alternative-product">
+                                <small>Здравословна алтернатива</small>
+                                <strong class="details-alternative-name">
+                                    @alternative.AlternativeName
+                                </strong>
+                            </div>
+
+                            <div class="details-alternative-quantity">
+                                Количество:
+                                <strong>
+                                    @alternative.QuantityGrams.ToString("0.##") г.
+                                </strong>
+                            </div>
+
+                            <p class="details-alternative-reason">
+                                @alternative.Reason
+                            </p>
+
+                        </div>
+
+                    </div>
+                }
+
+            </div>
         }
-    }
-    else
-    {
-        <p class="text-muted">
-            Няма предложени здравословни алтернативи.
-        </p>
-    }
+        else
+        {
+            <div class="details-no-alternatives">
+                <span>🌱</span>
+
+                <h5>Няма предложени алтернативи</h5>
+
+                <p>
+                    За тази рецепта не са запазени здравословни алтернативи.
+                </p>
+            </div>
+        }
+
+    </section>
+
+    <!-- FOOTER INFORMATION -->
+    <section class="details-footer-card">
+
+        <div>
+            <span class="details-section-label">
+                ИНФОРМАЦИЯ
+            </span>
+
+            <h3>Запазена рецепта</h3>
+
+            <p>
+                Дата на запазване:
+                <strong>
+                    @Model.CreatedAtUtc.ToLocalTime().ToString("dd.MM.yyyy HH:mm")
+                </strong>
+            </p>
+        </div>
+
+        <a asp-controller="Recipes"
+           asp-action="Saved"
+           class="btn btn-primary details-return-button">
+            ← Моите рецепти
+        </a>
+
+    </section>
 
 </div>

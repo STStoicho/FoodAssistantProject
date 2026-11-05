@@ -1,8 +1,316 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Начало";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="home-page">
+
+    <!-- HERO SECTION -->
+    <section class="home-hero">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-7">
+
+                <div class="hero-label">
+                    <span class="hero-label-dot"></span>
+                    ИНТЕЛИГЕНТЕН ПОМОЩНИК ЗА ХРАНЕНЕ
+                </div>
+
+                <h1 class="hero-title">
+                    Храни се добре.
+                    <span>Живей по-здравословно.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Открий нови идеи за здравословно хранене.
+                    Въведи продуктите, с които разполагаш, избери
+                    желаните калории и остави FoodAssistant да създаде
+                    рецепта специално за теб.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a asp-controller="Recipes"
+                       asp-action="Index"
+                       class="btn btn-primary hero-main-button">
+                        <span>Създай рецепта</span>
+                        <span class="button-arrow">→</span>
+                    </a>
+
+                    <a asp-controller="Recipes"
+                       asp-action="Saved"
+                       class="btn btn-outline-primary hero-secondary-button">
+                        Моите рецепти
+                    </a>
+
+                </div>
+
+                <div class="hero-benefits">
+
+                    <div class="hero-benefit">
+                        <span class="benefit-check">✓</span>
+                        Персонализирани рецепти
+                    </div>
+
+                    <div class="hero-benefit">
+                        <span class="benefit-check">✓</span>
+                        Изчислени хранителни стойности
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- VISUAL CARD -->
+            <div class="col-lg-5">
+
+                <div class="hero-visual">
+
+                    <div class="hero-decoration hero-decoration-one"></div>
+                    <div class="hero-decoration hero-decoration-two"></div>
+
+                    <div class="recipe-preview-card">
+
+                        <div class="preview-top">
+                            <span class="preview-label">
+                                <span class="preview-dot"></span>
+                                РЕЦЕПТА
+                            </span>
+
+                            <span class="preview-leaf">🌿</span>
+                        </div>
+
+                        <div class="food-illustration">
+                            <div class="food-circle">
+                                <span>🥗</span>
+                            </div>
+                        </div>
+
+                        <div class="preview-content">
+
+                            <span class="preview-category">
+                                ЗДРАВОСЛОВНО ХРАНЕНЕ
+                            </span>
+
+                            <h3>Твоята следваща любима рецепта</h3>
+
+                            <p>
+                                Създадена според продуктите и
+                                хранителните ти предпочитания.
+                            </p>
+
+                            <div class="preview-tags">
+                                <span>Продукти</span>
+                                <span>Калории</span>
+                                <span>БЖУ</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="floating-note floating-note-top">
+                        <span class="floating-icon">✨</span>
+                        <div>
+                            <strong>AI предложения</strong>
+                            <small>Идеи според продуктите ти</small>
+                        </div>
+                    </div>
+
+                    <div class="floating-note floating-note-bottom">
+                        <span class="floating-icon">🥑</span>
+                        <div>
+                            <strong>Хранителен баланс</strong>
+                            <small>Калории и БЖУ</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="home-features">
+
+        <div class="section-heading">
+
+            <span class="section-eyebrow">ВЪЗМОЖНОСТИ</span>
+
+            <h2>Всичко необходимо за по-добро хранене</h2>
+
+            <p>
+                FoodAssistant съчетава изкуствен интелект и хранителни
+                данни, за да улесни ежедневното планиране на храната.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-3">
+                <div class="feature-card">
+
+                    <div class="feature-icon feature-icon-green">
+                        ✨
+                    </div>
+
+                    <h4>AI рецепти</h4>
+
+                    <p>
+                        Генериране на рецепти според наличните
+                        продукти и желаните калории.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="feature-card">
+
+                    <div class="feature-icon feature-icon-orange">
+                        🥗
+                    </div>
+
+                    <h4>Здравословни алтернативи</h4>
+
+                    <p>
+                        Предложения за замяна на продукти
+                        с по-подходящи алтернативи.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="feature-card">
+
+                    <div class="feature-icon feature-icon-blue">
+                        📊
+                    </div>
+
+                    <h4>Хранителни стойности</h4>
+
+                    <p>
+                        Изчисляване на калории, протеини,
+                        въглехидрати и мазнини чрез USDA.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="feature-card">
+
+                    <div class="feature-icon feature-icon-purple">
+                        📖
+                    </div>
+
+                    <h4>Моите рецепти</h4>
+
+                    <p>
+                        Запазване, преглеждане и управление
+                        на любимите рецепти.
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="home-how-it-works">
+
+        <div class="section-heading">
+
+            <span class="section-eyebrow">КАК РАБОТИ?</span>
+
+            <h2>Три лесни стъпки до твоята рецепта</h2>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="step-card">
+
+                    <div class="step-number">01</div>
+
+                    <h4>Избери продуктите</h4>
+
+                    <p>
+                        Въведи продуктите, с които разполагаш,
+                        и посочи броя порции.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="step-card">
+
+                    <div class="step-number">02</div>
+
+                    <h4>Генерирай рецепта</h4>
+
+                    <p>
+                        Изкуственият интелект ще създаде
+                        рецепта според зададените параметри.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="step-card">
+
+                    <div class="step-number">03</div>
+
+                    <h4>Виж резултата</h4>
+
+                    <p>
+                        Разгледай продуктите, инструкциите,
+                        хранителните стойности и алтернативите.
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="home-cta">
+
+        <div class="cta-content">
+
+            <span class="section-eyebrow">
+                ЗАПОЧНИ ОЩЕ СЕГА
+            </span>
+
+            <h2>
+                Направи следващото си хранене по-лесно.
+            </h2>
+
+            <p>
+                Използвай продуктите, които вече имаш,
+                и открий нови идеи за вкусни рецепти.
+            </p>
+
+            <a asp-controller="Recipes"
+               asp-action="Index"
+               class="btn btn-light cta-button">
+                Генерирай първата си рецепта →
+            </a>
+
+        </div>
+
+    </section>
+
 </div>

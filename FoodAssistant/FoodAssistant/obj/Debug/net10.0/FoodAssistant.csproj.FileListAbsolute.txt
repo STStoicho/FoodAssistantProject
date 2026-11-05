@@ -136,7 +136,6 @@ C:\Users\Stoicho\Desktop\Projects\FoodAssistant\FoodAssistant\obj\Debug\net10.0\
 C:\Users\Stoicho\Desktop\Projects\FoodAssistant\FoodAssistant\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Stoicho\Desktop\Projects\FoodAssistant\FoodAssistant\obj\Debug\net10.0\scopedcss\bundle\FoodAssistant.styles.css
 C:\Users\Stoicho\Desktop\Projects\FoodAssistant\FoodAssistant\obj\Debug\net10.0\scopedcss\projectbundle\FoodAssistant.bundle.scp.css
-C:\Users\Stoicho\Desktop\Projects\FoodAssistant\FoodAssistant\obj\Debug\net10.0\compressed\53ss1g2316-{0}-b9sayid5wm-b9sayid5wm.gz
 C:\Users\Stoicho\Desktop\Projects\FoodAssistant\FoodAssistant\obj\Debug\net10.0\compressed\mfxv6xt45r-{0}-61n19gt1b8-61n19gt1b8.gz
 C:\Users\Stoicho\Desktop\Projects\FoodAssistant\FoodAssistant\obj\Debug\net10.0\compressed\xwzuzlcqw2-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 C:\Users\Stoicho\Desktop\Projects\FoodAssistant\FoodAssistant\obj\Debug\net10.0\compressed\q2uwsnxew7-{0}-bqjiyaj88i-bqjiyaj88i.gz
@@ -212,3 +211,4 @@ C:\Users\Stoicho\Desktop\Projects\FoodAssistant\FoodAssistant\obj\Debug\net10.0\
 C:\Users\Stoicho\Desktop\Projects\FoodAssistant\FoodAssistant\obj\Debug\net10.0\FoodAssistant.pdb
 C:\Users\Stoicho\Desktop\Projects\FoodAssistant\FoodAssistant\obj\Debug\net10.0\FoodAssistant.genruntimeconfig.cache
 C:\Users\Stoicho\Desktop\Projects\FoodAssistant\FoodAssistant\obj\Debug\net10.0\ref\FoodAssistant.dll
+C:\Users\Stoicho\Desktop\Projects\FoodAssistant\FoodAssistant\obj\Debug\net10.0\compressed\53ss1g2316-{0}-1f1eg3ciem-1f1eg3ciem.gz

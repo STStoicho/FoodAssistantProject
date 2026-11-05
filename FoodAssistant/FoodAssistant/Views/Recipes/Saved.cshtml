@@ -2,112 +2,163 @@
 
 @{
     ViewData["Title"] = "Моите рецепти";
+
+    var recipes = Model?.ToList() ?? new List<FoodAssistant.Models.Recipe>();
 }
 
-<div class="container mt-4">
+<div class="saved-page">
 
-    <div class="d-flex justify-content-between align-items-center mb-4">
+    <!-- HEADER -->
+    <section class="saved-header">
+
         <div>
-            <h1>Моите рецепти</h1>
-            <p class="text-muted">
-                Всички рецепти, които си запазил в NutriAI.
+
+            <h1>Моите рецепти <span>♡</span></h1>
+
+            <p>
+                Всички рецепти, които си харесал и запазил в FoodAssistant.
+                Откривай ги отново, когато имаш нужда от идея за хранене.
             </p>
         </div>
-    </div>
 
+        <a asp-controller="Recipes"
+           asp-action="Index"
+           class="btn btn-primary saved-create-button">
+            <span>＋</span>
+            Създай рецепта
+        </a>
+
+    </section>
+
+    <!-- NOTIFICATIONS -->
     @if (TempData["SuccessMessage"] != null)
     {
-        <div class="alert alert-success">
+        <div class="alert alert-success saved-alert">
+            <span>✓</span>
             @TempData["SuccessMessage"]
         </div>
     }
 
     @if (TempData["ErrorMessage"] != null)
     {
-        <div class="alert alert-danger">
+        <div class="alert alert-danger saved-alert">
             @TempData["ErrorMessage"]
         </div>
     }
 
-    @if (!Model.Any())
+    <!-- RECIPE COUNT -->
+    @if (recipes.Any())
     {
-        <div class="alert alert-info text-center p-4">
-            <h4>Все още нямаш запазени рецепти.</h4>
-            <p>Генерирай рецепта и я запази, за да се появи тук.</p>
+        <div class="saved-list-heading">
 
-            <a asp-controller="Recipes"
-               asp-action="Index"
-               class="btn btn-primary">
-                Генерирай рецепта
-            </a>
+            <div>
+                <h3>Запазени рецепти</h3>
+                <p>Твоите предложения на едно място.</p>
+            </div>
+
+            <span class="saved-count">
+                @recipes.Count рецепти
+            </span>
+
         </div>
-    }
-    else
-    {
-        <div class="row">
-            @foreach (var recipe in Model)
+
+        <!-- RECIPE CARDS -->
+        <div class="row g-4">
+
+            @foreach (var recipe in recipes)
             {
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100 shadow-sm">
+                <div class="col-md-6 col-xl-4">
 
-                        <div class="card-body">
+                    <div class="saved-recipe-card">
 
-                            <h5 class="card-title">
-                                @recipe.Name
-                            </h5>
+                        <div class="saved-card-top">
 
-                            <p class="card-text text-muted">
-                                @recipe.Description
-                            </p>
-
-                            <hr />
-
-                            <p>
-                                <strong>Порции:</strong>
-                                @recipe.Servings
-                            </p>
-
-                            <p>
-                                <strong>Време за приготвяне:</strong>
-                                @recipe.PreparationTimeMinutes мин.
-                            </p>
-
-                            <p>
-                                <strong>Калории:</strong>
-                                @recipe.CaloriesPerServing kcal / порция
-                            </p>
-
-                            <p>
-                                <strong>Протеини:</strong>
-                                @recipe.ProteinPerServing г
-                            </p>
-
-                            <p>
-                                <strong>Въглехидрати:</strong>
-                                @recipe.CarbsPerServing г
-                            </p>
-
-                            <p>
-                                <strong>Мазнини:</strong>
-                                @recipe.FatPerServing г
-                            </p>
+                            <h3 style="color: #f0f5ed;">@recipe.Name</h3>
 
                         </div>
 
-                        <div class="card-footer">
+                        <div class="saved-card-content">
 
-                            <small class="text-muted d-block mb-3">
-                                Запазена на:
+                            <p class="saved-description">
+                                @recipe.Description
+                            </p>
+
+                            <div class="saved-recipe-meta">
+
+                                <div>
+                                    <span>⏱️</span>
+                                    @recipe.PreparationTimeMinutes мин.
+                                </div>
+
+                                <div>
+                                    <span>👥</span>
+                                    @recipe.Servings порции
+                                </div>
+
+                            </div>
+
+                            <!-- CALORIES -->
+                            <div class="saved-calorie-box">
+
+                                <div>
+                                    <span class="saved-calorie-icon">🔥</span>
+
+                                    <div>
+                                        <small>Калории за порция</small>
+
+                                        <strong>
+                                            @recipe.CaloriesPerServing.ToString("0.##")
+                                            kcal
+                                        </strong>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- MACROS -->
+                            <div class="saved-macros">
+
+                                <div>
+                                    <strong>
+                                        @recipe.ProteinPerServing.ToString("0.##") г.
+                                    </strong>
+                                    <small>Протеини</small>
+                                </div>
+
+                                <div>
+                                    <strong>
+                                        @recipe.CarbsPerServing.ToString("0.##") г.
+                                    </strong>
+                                    <small>Въглехидрати</small>
+                                </div>
+
+                                <div>
+                                    <strong>
+                                        @recipe.FatPerServing.ToString("0.##") г.
+                                    </strong>
+                                    <small>Мазнини</small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- CARD FOOTER -->
+                        <div class="saved-card-footer">
+
+                            <div class="saved-date">
+                                <span>📅</span>
+
                                 @recipe.CreatedAtUtc.ToLocalTime().ToString("dd.MM.yyyy HH:mm")
-                            </small>
+                            </div>
 
-                            <div class="d-flex gap-2">
+                            <div class="saved-card-actions">
 
                                 <a asp-controller="Recipes"
                                    asp-action="Details"
                                    asp-route-id="@recipe.Id"
-                                   class="btn btn-primary flex-grow-1">
-                                    Разгледай
+                                   class="btn btn-primary saved-details-button">
+                                    Разгледай →
                                 </a>
 
                                 <form asp-controller="Recipes"
@@ -117,9 +168,9 @@
                                       onsubmit="return confirm('Сигурни ли сте, че искате да изтриете тази рецепта?');">
 
                                     <button type="submit"
-                                            class="btn btn-danger">
-                                        <i class="bi bi-trash"></i>
-                                        Изтрий
+                                            class="btn btn-danger saved-delete-button"
+                                            title="Изтрий рецептата">
+                                        🗑
                                     </button>
 
                                 </form>
@@ -129,8 +180,37 @@
                         </div>
 
                     </div>
+
                 </div>
             }
+
         </div>
     }
+    else
+    {
+        <!-- EMPTY STATE -->
+        <section class="saved-empty-state">
+
+            <div class="empty-recipe-icon">
+                📖
+            </div>
+
+            <span class="saved-eyebrow">ТВОЯТА КОЛЕКЦИЯ</span>
+
+            <h2>Все още нямаш запазени рецепти.</h2>
+
+            <p>
+                Запази първата си рецепта и тя ще се появи тук.
+                Така винаги ще можеш лесно да се връщаш към любимите си ястия.
+            </p>
+
+            <a asp-controller="Recipes"
+               asp-action="Index"
+               class="btn btn-primary empty-create-button">
+                ✨ Генерирай първата си рецепта
+            </a>
+
+        </section>
+    }
+
 </div>
